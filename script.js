@@ -1,24 +1,24 @@
-const scrollRevealOption = {
-    distance: "50px",
-    origin: "bottom",
-    duration: 1000,
-};
-ScrollReveal().reveal(".header_image img", {
-...scrollRevealOption,
-origin: "right",
-});
+document.addEventListener('DOMContentLoaded', ()=>{
+    const Links = document.querySelectorAll('.link');
 
-ScrollReveal().reveal(".header_content h1", {
-...scrollRevealOption,
-delay: 500,
-})
+    const Sections = document.querySelectorAll('section');
 
-ScrollReveal().reveal(".header_content p", {
-...scrollRevealOption,
-delay: 1000,
-})
+    window.addEventListener('scroll', () => {
+        let current = '';
 
-ScrollReveal().reveal(".header_content form", {
-...scrollRevealOption,
-delay: 1500,
+        Sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (scrollY >= sectionTop - 51) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        Links.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    });
+
 })
