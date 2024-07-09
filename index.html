@@ -4,95 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <link rel="stylesheet" href="style.css">
-    <title>Task 01 | Landing Page</title>
+    <title>Landing Page</title>
 </head>
 
 <body>
-    <nav>
-        <div class="nav_logo">
-            <div>E</div>
-            Learning
-        </div>
-        <ul class="nav_socials">
-            <li>
-                <a href="#">
-                    <i class="ri-twitter-fill"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="ri-facebook-circle-fill"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="ri-pinterest-fill"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="ri-instagram-line"></i>
-                </a>
-            </li>
-        </ul>
-        <div class="nav_contact">
-            <div class="nav_contact_card">
-                <span>
-                    <i class="ri-phone-line"></i>
-                </span>
-                <div>
-                    <p>
-                        Call Us
-                    </p>
-                    <h4>+91 8055157318</h4>
-                </div>
+    <header>
+        <nav class="navbar">
+            <div class="nav-name">
+                <h1>Prodigy_Infotech</h1>
             </div>
-            <div class="nav_contact_card">
-                <span>
-                    <i class="ri-mail-line"></i>
-                </span>
-                <div>
-                    <p>
-                        Mail Us
-                    </p>
-                    <h4>learner@contact.com</h4>
-                </div>
-            </div>
-        </div>
-    </nav>
+            <ul class="nav-links">
+                <li class="nav-link"><a class="link" href="#home">Home</a></li>
 
-    <header class="header_container">
-        <div class="header_image">
-            <img src="assets/header.jpg" alt="header">
-        </div>
-        <div class="header_content">
-            <h1>Single Platform For All Your <span>Learning</span> Needs.</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ratione, asperiores deleniti quidem saepe vel eligendi laudantium facilis possimus dolorum quibusdam libero accusamus sequi magni temporibus quaerat? Ea debitis harum possimus temporibus nisi perspiciatis?
-            </p>
-            <form action="/">
-                <div class="input_row">
-                    <div class="input_group">
-                        <span>
-                            <i class="ri-search-line"></i>
-                        </span>
-                        <input type="text" placeholder="Search">
-                    </div>
-                    <div class="input_group">
-                        <span>
-                            <i class="ri-arrow-drop-down-line"></i>
-                        </span>
-                        <input type="text" placeholder="Categories">
-                    </div>
-                    <button type="submit">Search Now</button>
-                </div>
-            </form>
-        </div>
+                <li class="nav-link"><a class="link" href="#about">About</a></li>
+
+                <li class="nav-link"><a class="link" href="#projects">Projects</a></li>
+
+                <li class="nav-link"><a class="link" href="#services">Services</a></li>
+
+                <li class="nav-link"><a class="link" href="#contacts">Contacts</a></li>
+            </ul>
+            <div class="icon">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
     </header>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <div class="content">
+        <section class="home" id="home">
+            Home Section
+        </section>
+        <section class="about" id="about">
+            About Section
+        </section>
+        <section class="projects" id="projects">
+            Project Section
+        </section>
+        <section class="services" id="services">
+            Service Section
+        </section>
+        <section class="contacts" id="contacts">
+            Contact Section
+        </section>
+    </div>
+    <footer>
+        &copy 2024 | All Rights Reserved
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
