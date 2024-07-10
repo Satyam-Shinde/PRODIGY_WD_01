@@ -134,6 +134,10 @@ footer {
         justify-content: space-evenly;
     }
 
+    .nav-links{
+        gap:0px;
+    }
+
     .nav-name{
         /* display: none; */
         justify-content: center;
