@@ -13,7 +13,7 @@ body {
 
 nav {
     width: 100%;
-    height: 50px;
+    /* height: 50px; */
     position: fixed;
     top: 0;
     overflow: hidden;
@@ -127,16 +127,21 @@ footer {
     display: none;
 }
 
-@media (max-width: 858px) {
-    .icon {
-        display: flex;
-        align-items: center;
-        font-size: 30px;
-        margin-right: 15px;
+
+@media (max-width: 834px){
+    .navbar{
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
-    .nav-links {
-        display: none;
+    .nav-name{
+        /* display: none; */
+        justify-content: center;
+        padding-bottom: 0;
+        margin-left: 0;
     }
 
+    .nav-name h1{
+        margin: 10px 0px;
+    }
 }
