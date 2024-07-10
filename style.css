@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     scroll-padding-top: 50px;
     font-family: "Fira Sans";
 }
@@ -9,6 +9,7 @@ html {
 body {
     margin: 0;
     padding-top: 50px;
+    height: 100%;
 }
 
 nav {
@@ -38,6 +39,9 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+ul{
+    padding-inline-start: 0px;
+}
 
 .nav-links {
     display: flex;
@@ -46,6 +50,7 @@ nav {
     align-items: center;
     gap: 30px;
     margin-right: 15px;
+
 }
 
 .nav-link {
@@ -60,9 +65,9 @@ nav {
     /* background-color: rgb(112, 232, 253); */
 }
 
-.link:hover {
+/* .link:hover {
     background-color: rgb(113, 113, 113);
-}
+} */
 
 .active {
     background-color: rgb(112, 232, 253);
@@ -82,7 +87,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 590px;
-    border: 1px solid rgb(115, 205, 243);
+    background-color: rgb(95, 207, 255);
 }
 
 .about {
@@ -90,7 +95,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 590px;
-    border: 1px solid rgb(115, 205, 243);
+    background-color: rgb(115, 243, 179);
 }
 
 .projects {
@@ -98,7 +103,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 590px;
-    border: 1px solid rgb(115, 205, 243);
+    background-color: rgb(205, 243, 115);
 }
 
 .services {
@@ -106,7 +111,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 590px;
-    border: 1px solid rgb(115, 205, 243);
+    background-color: rgb(213, 115, 243);
 }
 
 .contacts {
@@ -114,7 +119,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 590px;
-    border: 1px solid rgb(115, 205, 243);
+    background-color: rgb(243, 115, 115);
 }
 
 footer {
@@ -123,19 +128,20 @@ footer {
     height: 10px;
 }
 
-.icon {
-    display: none;
-}
-
 
 @media (max-width: 834px){
+    html{
+        scroll-padding-top: 107px;
+    }
+
     .navbar{
         flex-direction: column;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
     }
 
     .nav-links{
         gap:0px;
+        margin-right: 0px;
     }
 
     .nav-name{
@@ -147,5 +153,21 @@ footer {
 
     .nav-name h1{
         margin: 10px 0px;
+    }
+
+    .home{
+        height: 1030px;
+    }
+    .about{
+        height: 1030px;
+    }
+    .projects{
+        height: 1030px;
+    }
+    .services{
+        height: 1030px;
+    }
+    .contacts{
+        height: 1030px;
     }
 }
